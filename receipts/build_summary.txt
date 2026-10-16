@@ -1,0 +1,10 @@
+modules built (lines '[k/n] Built' or 'Replayed'): 2066
+error lines: 0
+warning lines: 5350
+'declaration uses sorry' warnings: 1
+warning: Challenge.lean:102:8: declaration uses `sorry`
+axiom check lines (AUDIT): 3
+info: Audit.lean:46:0: AUDIT axioms HardDiskB5Lean.theorem_1_1: [propext, Classical.choice, Quot.sound] (sorryAx allowed: false)
+info: Audit.lean:46:0: AUDIT axioms theorem_1_1: [propext, Classical.choice, Quot.sound] (sorryAx allowed: false)
+info: Audit.lean:46:0: AUDIT placeholders (0): []
+Build completed successfully (10775 jobs).

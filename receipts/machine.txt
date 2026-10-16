@@ -1,0 +1,21 @@
+[build machine (lake exe cache get, lake build, Check.lean)]
+machine: r8g.4xlarge (us-east-1c)
+cpu: AWS Graviton4
+cores: 16
+memory_total: 123.5 GiB (MemTotal 129545484 kB)
+architecture: aarch64
+os: Amazon Linux 2023.12.20261014
+kernel: Linux 6.18.54-121.166.amzn2023.aarch64 aarch64
+
+[versions]
+lean --version: Lean (version 4.33.1, aarch64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+lake --version: Lake version 5.0.0-src+819816b (Lean version 4.33.1)
+mathlib: tag v4.33.1, commit 0df444a360eaa60ab8c11dca51a86af692955474
+
+[comparator (same machine, after the build)]
+landrun 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 (landrun version 0.1.18)
+comparator 3927ad383f208ae977c340a91c48ac9b497d2097, built with Lean v4.33.1
+lean4export 15f6055e299ad5b89345e533cc2192f4cc00f659, built with Lean v4.33.1
+
+[disk]
+.lake after the build: 19193141112 bytes

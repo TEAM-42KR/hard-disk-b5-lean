@@ -1,0 +1,10 @@
+HardDiskB5Lean.theorem_1_1 : ∀ (e : HardDiskB5.Lean.Pt),
+  ‖e‖ = 1 →
+    HardDiskB5.Lean.b5 =
+      140 / 81 - 101 * √3 / (9 * Real.pi) + 1169 / (18 * Real.pi ^ 2) - 71 * √3 / (2 * Real.pi ^ 3) +
+        (4 *
+            ∫ (x : HardDiskB5.Lean.Pt) in HardDiskB5.Lean.disk 0 ∩ HardDiskB5.Lean.disk e,
+              (MeasureTheory.volume (HardDiskB5.Lean.disk 0 ∩ HardDiskB5.Lean.disk e ∩ HardDiskB5.Lean.disk x)).toReal ^
+                2) /
+          Real.pi ^ 3
+'HardDiskB5Lean.theorem_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
